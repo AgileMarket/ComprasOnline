@@ -3,3 +3,5 @@ Primer Commit:
 Andrés Sáez Ariza
 
 Esteban Castaño
+
+Harrison Rodriguez
