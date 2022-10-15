@@ -1,5 +1,15 @@
-Primer Commit:
+﻿Primer Commit:
 
 Andrés Sáez Ariza
 
+<<<<<<< HEAD
 Jorge Esteban Castaño Giraldo grupo 15-16
+=======
+Esteban Castaño
+
+Harrison Rodriguez
+
+Camila Stefany Mikán
+
+Julian Alberto Acosta Alvarez
+>>>>>>> 067ab114cdde72c9ca78c8ae13fc6036bb03d6e5
