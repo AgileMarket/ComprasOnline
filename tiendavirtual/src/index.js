@@ -1,13 +1,20 @@
+
+/*Este archivo llama todos los componentes de la aplicacion */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
+//Importar el archivo Interfazventas.js y from que viene de la carpeta "Components y slash  Interfazventas"
+
+import { Interfazventas } from './components/Interfazventas';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    {/*Se invoca el componente de archivo Interfazventas:*/} 
+    <Interfazventas/>
   </React.StrictMode>
 );
 
