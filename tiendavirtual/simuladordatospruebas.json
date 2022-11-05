@@ -1,0 +1,29 @@
+{
+    "productos":[
+    {    "id": 1,
+        "name:":"colecciones cocinas",
+        "price": 2000000,
+        "description": "materiales de cocinas"
+    },
+    {   "id": 1,
+        "name:":"colecciones baño",
+        "price": 2000000,
+        "description": "materiales de baños"
+    },
+    {   "id": 1,
+        "name:":"colecciones alcobas",
+        "price": 4000000,
+        "description": "materiales de alcobas"
+    },
+    {   "id": 1,
+        "name:":"colecciones de patio",
+        "price": 6000000,
+        "description": "materiales de patio"
+    },
+    {   "id": 1,
+        "name:":"mause",
+        "price": 8000000,
+        "description": "carrito de compra"
+    }
+    ]
+}
