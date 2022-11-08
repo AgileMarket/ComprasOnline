@@ -43,7 +43,7 @@ export default class Menuinterfazprincipal extends Component {
                             <li className="nav-item dropdown">
                                 
                                 {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
-                                <Link className="nav-link dropdown-toggle" to="/ventas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className="nav-link dropdown-toggle" to="/useColumnslistaventas/useRowslistaventas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Lista Ventas
                                 </Link>
                             </li>
