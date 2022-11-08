@@ -5,8 +5,8 @@ import {BrowserRouter as Router,Route} from 'react-router-dom';
 
 /*Importaciones del uso de las tablas:*/
 import {useTable, usePagination} from "react-table"
-import useRows from './Components/useRowslistaventas';
 import useColumns from './Components/useColumnslistaventas';
+import useRows from './Components/useRowslistaventas';
 
 /*Importaciones de los inconos de las tablas:*/
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
@@ -25,7 +25,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-function App() {
+export default function App() {
   //Funciones de la tablas:
   const columns = useColumns();
   const data = useRows();
@@ -79,7 +79,8 @@ function App() {
       <Route path="/modificacion" Component={Modificarproductos}></Route>
       
       {/*enlace de nuestra importacion de archivo listaventas*/}
-      <Route path="/ventas" Component={Listaventas}>
+      <Route path="/useColumnslistaventas/useRowslistaventas" Component={Listaventas}>
+        {/*Codigo html de la table*/}
       <div className="container">
       <table {...getTableProps()}>
         <thead>
@@ -185,4 +186,4 @@ function App() {
   
 }
 
-export default App;
+//export default App;
