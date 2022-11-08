@@ -17,7 +17,7 @@ class Listaventas extends Component {
         
         return (
             <div id="ListaVentas">
-                <h3>Soy la tabla de la lista de ventas</h3>
+                Listaventas
                 <useColumnslistaventas/>
                 <useRowslistaventas/>
 

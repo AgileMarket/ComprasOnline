@@ -13,11 +13,11 @@ export default function useColumns() {
             
             {
                 Header: "idVenta",
-                accesor: "idventa"
+                accessor: "idventa"
             },
             {
                 Header: "Valor",
-                accesor: "valor"
+                accessor: "valor"
             },
           ],
          []
