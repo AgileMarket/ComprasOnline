@@ -1,5 +1,4 @@
 //Importacion de proceder  manejo de los esquemas y Mongo DB
-
 import mongoose from 'mongoose';
 
 //Funcion de usuarioSchema, con la respectiva descripciones:

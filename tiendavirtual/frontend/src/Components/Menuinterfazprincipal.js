@@ -16,7 +16,7 @@ export default class Menuinterfazprincipal extends Component {
                 <div className="container-fluid">
                     
                     {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
-                    <Link className="navbar-brand" to="/">Bienvenidos A la Tienda Virtual</Link>
+                    <Link className="navbar-brand" to="/">Bienvenidos a la Tienda Virtual</Link>
                     
                     {/*Boton Minimizar*/}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

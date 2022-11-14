@@ -1,5 +1,4 @@
 //Importacion de proceder  manejo de los esquemas y Mongo DB
-
 import mongoose from 'mongoose';
 
 //Importacion de un cifrado de datos, password

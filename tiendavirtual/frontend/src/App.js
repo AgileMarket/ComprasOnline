@@ -29,7 +29,7 @@ export default function App() {
     <Router>
 
     {/*Contenedor:*/}
-    <div className="container p-4">
+    <div className="container">
 
 
 
