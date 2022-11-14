@@ -8,17 +8,55 @@ export default function useRows(){
         () => [
             
             {
-                fecha: 27092022,
+                fecha: '27-09-2022',
                 idventa: 123,
                 valor: 35
             },
             {
-                fecha: 28092022,
+                fecha: '28-09-2022',
                 idventa: 234,
                 valor: 50
             },
             {
-                fecha: 29092022,
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            }
+            ,
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            }
+            ,
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            }
+            ,
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            },
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            },
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            },
+            {
+                fecha: '29-09-2022',
+                idventa: 543,
+                valor: 10
+            },
+            {
+                fecha: '29-09-2022',
                 idventa: 543,
                 valor: 10
             }

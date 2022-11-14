@@ -1,9 +1,12 @@
-import React, { Fragment } from "react";
+//import React, { Fragment } from "react";
 
 /*Importaciones del uso de las tablas:*/
 import { useTable, usePagination } from "react-table";
 import useColumns from "./useColumnslistaventas";
 import useRows from "./useRowslistaventas";
+
+/*Importar la etiqueta html Link con el uso de la rutas de react: */
+import { Link } from 'react-router-dom';
 
 /*Importaciones de los inconos de las tablas:*/
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
@@ -45,17 +48,61 @@ const Listaventas = () => {
 
   return (
     //Fragment -> Contenedor grande, que sostiene el div
-    <Fragment>
-      <div>Listaventas</div>
-   
-    {/*Codigo html de la tabla*/}
-      <table {...getTableProps()}>
-        <thead>
+
+    <div className="">
+
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+
+          {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
+          <Link className="navbar-brand" to="/">Bienvenidos a la Tienda Virtual</Link>
+
+          {/*Boton Minimizar*/}
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+            {/*SUBMENUS:*/}
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+              {/*Lista de integracion del submenu:*/}
+              <li className="nav-item">
+
+                {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
+                <Link className="nav-link active" aria-current="page" to="/productos">Lista productos</Link>
+              </li>
+              {/*Lista de integracion del submenu:*/}
+              <li className="nav-item">
+
+                {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
+                <Link className="nav-link" to="/modificarproductos">Modificar Productos</Link>
+              </li>
+              {/*Lista de integracion del submenu:*/}
+              <li className="nav-item dropdown">
+
+                {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
+                <Link className="nav-link dropdown-toggle" to="/listaventas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lista Ventas
+                </Link>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <p />
+    
+
+      {/*Codigo html de la tabla*/}
+      <table class="table table-light "{...getTableProps()}>
+        <thead  >
           {
             // Loop over the header rows
             headerGroups.map((headerGroup) => (
               // Apply the header row props
-              <tr {...headerGroup.getHeaderGroupProps()}>
+              <tr  {...headerGroup.getHeaderGroupProps()}>
                 {
                   // Loop over the headers in each row
                   headerGroup.headers.map((column) => (
@@ -102,6 +149,7 @@ const Listaventas = () => {
           }
         </tbody>
       </table>
+
       <div className="pagination">
         <span>
           Página&nbsp;
@@ -137,7 +185,8 @@ const Listaventas = () => {
           ))}
         </select>
       </div>
-    </Fragment>
+
+    </div>
   );
 };
 
