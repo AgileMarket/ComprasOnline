@@ -9,7 +9,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 /*Exportacion por defecto  la clase del archivo listaproductos.js heredado de la carpeta component*/
-export default class Listaproductos extends Component {
+export default class Listaproductoscliente extends Component {
   //estado de actualizacion de los productos:
   state = {
     productos: [],
@@ -78,26 +78,6 @@ export default class Listaproductos extends Component {
                     to="/productos"
                   >
                     Lista productos
-                  </Link>
-                </li>
-                {/*Lista de integracion del submenu:*/}
-                <li className="nav-item">
-                  {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
-                  <Link className="nav-link" to="/modificarproductos">
-                    Modificar Productos
-                  </Link>
-                </li>
-                {/*Lista de integracion del submenu:*/}
-                <li className="nav-item dropdown">
-                  {/*Etiqueta a se reemplaza por link, y los href se reemplaza por to*/}
-                  <Link
-                    className="nav-link dropdown-toggle"
-                    to="/listaventas"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Lista Ventas
                   </Link>
                 </li>
               </ul>

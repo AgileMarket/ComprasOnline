@@ -18,47 +18,47 @@ export default function useRows(){
                 valor: 50
             },
             {
-                fecha: '29-09-2022',
+                fecha: '30-09-2022',
                 idventa: 543,
                 valor: 10
             }
             ,
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '01-10-2022',
+                idventa: 308,
+                valor: 20
             }
             ,
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '02-10-2022',
+                idventa: 210,
+                valor: 15
             }
             ,
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '03-10-2022',
+                idventa: 100,
+                valor: 30
             },
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '04-10-2022',
+                idventa: 900,
+                valor: 90
             },
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '05-10-2022',
+                idventa: 507,
+                valor: 85
             },
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '06-10-2022',
+                idventa: 430,
+                valor: 40
             },
             {
-                fecha: '29-09-2022',
-                idventa: 543,
-                valor: 10
+                fecha: '07-10-2022',
+                idventa: 700,
+                valor: 76
             }
         ],
         []
