@@ -6,10 +6,13 @@ Creacion del desarrollo de nuestro sitio web
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+
+//Importacion de la dependencia cloudinary express-filoeupload fs-extra, para utilizarla
+import fileupload from 'express-fileupload';
 import conectarDB from './config/db.js';
-import usuarioRoutes from './routes/usuariosRoutes.js';
-import productosRoutes from './routes/productosRoutes.js';
-import ventasRoutes from './routes/ventasRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+import productosRoutes from './routes/productoRoutes.js';
+import ventasRoutes from './routes/ventaRoutes.js';
 
 //La funcion de la constante del puerto 4000;
 const PORT = process.env.PORT || 4000;
@@ -22,6 +25,12 @@ const app = express();
  
 //informacion enviada y recibida, atra ves del archivo JSON y conectarlo con Mongo
 app.use(express.json()); 
+//Utilizacion de la dependencia  Cloudinary
+app.use(fileupload({
+    useTempFiles: true,
+    tempFileDir: './files'
+}));
+
 conectarDB();
 
 //middlewares

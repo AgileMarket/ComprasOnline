@@ -6,16 +6,17 @@ import {
     prueba, 
     registrar,
     confirmar
-} from '../controladores/usuariosControladores.js';
+} from '../controladores/usuarioControladores.js';
 
 //Funcion:
 const router = express.Router();
 
-//CRUD de las rutas:
+//CRUD de las rutas, Usuario:
 router.get('/prueba', prueba);
 
-//Router de configuracion del modelo:
+//Router de configuracion del modelo, de usuarioControladores: 
 router.post('/', registrar);
+
 //enviar correo de confirmacion:
 router.get('/confirmar/:token', confirmar);
 
