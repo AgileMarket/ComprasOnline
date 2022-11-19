@@ -9,6 +9,7 @@ import generarId from '../helper/generarId.js';
 
 //Funcion de usuarioSchema, con la respectiva descripciones:
 const usuarioSchema = mongoose.Schema({
+    //Campos requeridos MongooseDB
     nombre:{
         type: String,
         required: true,
@@ -72,6 +73,7 @@ usuarioSchema.methods.comprobarPassword = async function(passwordFomrulario){
     return await bcrypt.compare(passwordFomrulario, this.password);
 };
 
-//
+//Funcion Usuario, de mongoose.model de usuarioquema:
 const Usuario = mongoose.model('Usuario', usuarioSchema);
+//Exportacion por defecto, invocado Usuario:
 export default Usuario;

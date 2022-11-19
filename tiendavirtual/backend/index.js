@@ -7,9 +7,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import conectarDB from './config/db.js';
-import usuarioRoutes from './routes/usuariosRoutes.js';
-import productosRoutes from './routes/productosRoutes.js';
-import ventasRoutes from './routes/ventasRoutes.js';
+import usuarioRoutes from './routes/usuarioRoutes.js';
+import productosRoutes from './routes/productoRoutes.js';
+import ventasRoutes from './routes/ventaRoutes.js';
 
 //La funcion de la constante del puerto 4000;
 const PORT = process.env.PORT || 4000;

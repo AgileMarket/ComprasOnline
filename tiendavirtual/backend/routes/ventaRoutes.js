@@ -4,7 +4,7 @@ import express from 'express';
 //Importacion de los controladores:
 import {
     prueba
-} from '../controladores/productosControladores.js'
+} from '../controladores/ventaControladores.js'
 
 //Funcion:
 const router = express.Router();
