@@ -14,7 +14,7 @@ import {
 //Funcion Router, para sincronizarlo con express:
 const router = express.Router();
 
-//CRUD Producto:
+//CRUD de las rutas, Usuario, epoints:
 router.get('/prueba', prueba);
 router.get('/get', getProductos);
 router.get('/get/:id', getProducto);

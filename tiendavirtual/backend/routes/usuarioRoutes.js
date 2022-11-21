@@ -8,10 +8,10 @@ import {
     confirmar
 } from '../controladores/usuarioControladores.js';
 
-//Funcion:
+//Funcion Router, para sincronizarlo con express:
 const router = express.Router();
 
-//CRUD de las rutas, Usuario:
+//CRUD de las rutas, Usuario, epoints:
 router.get('/prueba', prueba);
 
 //Router de configuracion del modelo, de usuarioControladores: 

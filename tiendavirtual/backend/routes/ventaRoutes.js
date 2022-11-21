@@ -1,15 +1,28 @@
 //Importacion de express
 import express from 'express';
+//import { updateProductos } from '../controladores/productoControladores.js';
 
-//Importacion de los controladores:
+//Importacion de la variables controladores ventaControladores.js:
 import {
-    prueba
+    prueba,
+    createVentas,
+    getVentas,
+    getVenta,
+    updateVentas,
+    deleteVentas
 } from '../controladores/ventaControladores.js'
 
-//Funcion:
+//Funcion Router, para sincronizarlo con express:  
 const router = express.Router();
 
-//CRUD
+//CRUD de las rutas, Venta, epoints:
 router.get('/prueba', prueba);
+
+router.post('/create', createVentas);
+router.get('/get', getVentas);
+router.get('/get/:id', getVenta);
+router.get('/update/:id', updateVentas);
+router.get('/delete/:id', deleteVentas);
+
 
 export default router;
