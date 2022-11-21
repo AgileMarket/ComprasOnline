@@ -12,10 +12,19 @@ const ventaSchema = new mongoose.Schema(
         type: Array,
         required: true,
         },
+        total:{
+            type: Number,
+            required: true,
+            trim: true 
+        },
         confirmado:{
         type: Boolean,
         default: false,
         },
+        estado:{
+            type: String,
+            default: "vigente",
+        }
     },
     {
         timestamps: true,

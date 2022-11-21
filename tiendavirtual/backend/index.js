@@ -1,5 +1,16 @@
 /*Archivo princpial:
 Creacion del desarrollo de nuestro sitio web
+Importaciones de todas las dependencias instaladas del backend:
+*Express
+*Dotenv
+*Cors
+*Express-fileupload -> Cloudinary
+*Conectar, MongoDB
+
+Incluyendo las importaciones de la carpeta routes con los archivos routes: 
+usuarioRoutes
+productoRoutes
+ventasRoutes
 */
 
 // Codigo para inicializar el servidor, de las 4 herramientas de las dependencias instaladas:
